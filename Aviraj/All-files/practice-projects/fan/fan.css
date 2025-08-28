@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;   
+}
+
+body{
+    margin-left: 420px;
+    height: 90vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+    
+img{
+    padding: 50px;
+    border-radius: 50%;
+    animation: fananmin linear infinite;
+}
+
+@keyframes fananmin
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+#fanon{
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #b57b9e, #bf17bf);
+}
+#fanoff{
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #7d7688, #4375ab);
+}
+#fan1{
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #946852, #536f3f);
+    color: beige;
+    font-size: larger;
+}
+#fan2{
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #946852, #536f3f);
+    color: beige;
+    font-size: larger;
+}
+#fan3{
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #946852, #536f3f);
+    color: beige;
+    font-size: larger;
+}

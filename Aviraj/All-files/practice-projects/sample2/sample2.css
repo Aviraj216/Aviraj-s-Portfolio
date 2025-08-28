@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, #535e8a, #b86cbc);
+  font-family: sans-serif;
+}
+.hover1 {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.hover1__button {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  color: #534e4a;
+  border: 2px solid #534e4a;
+  cursor: pointer;
+  transition: color 300ms ease, transform 300ms ease;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.hover1__overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #534e4a;
+  transition: bottom 300ms ease;
+  z-index: 1;
+}
+
+.hover1:hover .hover1__overlay {
+  bottom: 0;
+}
+
+.hover1:hover .hover1__button {
+  color: #fff;
+}
+
+
+.hover2 {
+  position: relative;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(120deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hover2 span {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.hover2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #2193b0, #6dd5ed);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.hover2:hover::before {
+  left: 0;
+}
+
+.hover2:hover span {
+  transform: translateX(10px);
+}
+
+.hover2:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25), 0 0 20px #a777e3;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+}
+
+/* .hover3{
+
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: antiquewhite;
+  position: relative;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f0e0e;
+}
+
+.hover3:hover {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(rgb(47, 47, 54), white, rgb(145, 62, 113));
+} */
+ .hover3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: antiquewhite;
+  position: relative;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f0e0e;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.hover3:hover {
+  color: #fff;
+background: linear-gradient(to right, #ff6a00, #ee0979);
+}
+
+/* Hide the extra text initially */
+.extra-text {
+  display: none;
+  font-size: 12px;
+  margin-top: 8px;
+  color: #090909;
+}
+
+/* Show on hover */
+.hover3:hover .extra-text {
+  display: block;
+}
